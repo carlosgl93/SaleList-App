@@ -1,0 +1,12 @@
+{
+  "name": "SaleList",
+  "displayName": "SaleList",
+  "expo": {
+    "name": "SaleList",
+    "slug": "SaleList",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
