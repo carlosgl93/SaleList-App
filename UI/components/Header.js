@@ -5,23 +5,24 @@ import { auth } from "../../database/firebase";
 import Styles from "../screens/Styles";
 
 const Header = (props) => {
-  const authStatus = auth.currentUser;
-  console.log("USER STATUS", authStatus);
+  const user = auth.currentUser;
+  console.log("USER STATUS", user);
 
   const loggedHeader = (props) => {
     return (
       <View>
         <Text style={Styles.header}>SaleList App</Text>
     <Text>{
-           
+           user.displayName
         }</Text>
       </View>
     );
   };
 
   return (
+
     <View>
-      <Text style={Styles.header}>SaleList App</Text>
+      <Text style={Styles.header}>SaleList App </Text>
     </View>
   );
 };

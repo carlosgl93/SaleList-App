@@ -11,6 +11,7 @@ import Login from './UI/screens/Login'
 import Register from './UI/screens/Register'
 import Tracker from './UI/screens/Tracker'
 import Footer from './UI/components/Footer'
+import NewWish from './UI/components/NewWish'
 
 export default function App() {
   return (
@@ -28,7 +29,8 @@ const AppSwitchNavigator = createSwitchNavigator({
   WishlistScreen: Wishlist,
   LoginScreen: Login,
   UserScreen: User,
-  TrackerScreen: Tracker
+  TrackerScreen: Tracker,
+  CreateNewWishScreen: NewWish
 });
 
 const AppNavigator = createAppContainer(AppSwitchNavigator)

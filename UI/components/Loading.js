@@ -13,12 +13,8 @@ const Loading = (props) => {
   const checkIfLoggedIn = () => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-          console.log('LOGGED IN, to wishlist')
-          console.log('user:', user)
-          console.log('auth current user method', auth.currentUser)
           props.navigation.navigate('WishlistScreen') 
       } else {
-          console.log('Not logged ')
           props.navigation.navigate('LoginScreen')
       }
     });

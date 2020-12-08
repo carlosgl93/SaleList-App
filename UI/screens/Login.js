@@ -25,7 +25,7 @@ const Login = (props) => {
         .then(
             alert('logged in successfully, redirecting to the homescreen'),
             props.navigation.navigate(
-                'WishlistScreen'
+                'LoadingScreen'
             )
         ).catch((error) => {
             alert('something went wrong, error:', error)
@@ -90,7 +90,7 @@ const Login = (props) => {
                 <View style={Styles.smallerMargins}>
             
                     <Button
-                    title="Don't have an account"
+                    title="Don't have an account?"
                     onPress={goToRegister}
                     >
                         
